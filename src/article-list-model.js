@@ -15,7 +15,8 @@
     saveArticles: function(){
       jQuery.ajax({
         type: 'GET',
-        url:worldNewsAPI,
+        url:worldNewsApi,
+        dataType: 'jsonp',
         async: false,
         success:function(articleResponse){
           let apiResults = articleResponse.response.results;
